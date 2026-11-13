@@ -12,12 +12,6 @@ For students: do these three steps at home, before the first session. They take 
 2. [Build the image](docs/installation.md#step-2-build-the-image)
 3. [Bind your package, create the container and run the example](docs/installation.md#step-3-bind-your-package-create-the-container-and-run-the-example)
 
-New to Docker, tmux or the robots? After the installation, do the tutorials in this order:
-
-1. [Docker and tmux](docs/tutorial_docker_tmux.md)
-2. [Simulation](docs/tutorial_simulation.md)
-3. [Real robots](docs/tutorial_robots.md)
-
 ## Quick start
 
 Every time you work with the simulator:

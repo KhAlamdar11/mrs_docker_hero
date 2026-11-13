@@ -52,7 +52,7 @@ The main commands:
     cp mrs_world_example.yaml my_test.yaml
     nano my_test.yaml
     ```
-    Move a robot, add a seventh one, or change `map:` to `hard_maze_10x10`. Then start it with `bash start.sh my_test.yaml` from the `startup` folder.
+    Move a robot, add a seventh one, or change `map:` to `random_10x10`. Then start it with `bash start.sh my_test.yaml` from the `startup` folder.
 
     This file is only in the container, and `docker rm` deletes it. To keep a scenario, put it in a folder from your laptop: see [Your own scenario](../README.md#your-own-scenario-robots-and-map).
 
