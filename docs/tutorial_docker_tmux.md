@@ -25,7 +25,7 @@ Common commands. Run them on your laptop, not in the container:
 - `docker rm mrs_hero_container` - deletes the container.
 
 **NOTA BENE**
-- Some folders in the container are folders on your laptop: `~/ros2_ws/src/hero_mrs` (the `mrs_docker_hero` folder) and, if you [bound one](own_package.md), your package at `~/ros2_ws/src/MY_PACKAGE_NAME`. Files there are safe even if you delete the container.
+- Two folders in the container are folders on your laptop: your package (`~/ros2_ws/src/MY_PACKAGE_NAME`, the one you set in `first_run.sh` in [installation step 3.1](installation.md#step-3-bind-your-package-create-the-container-and-run-the-example)) and `~/ros2_ws/src/hero_mrs` (the `mrs_docker_hero` folder). Files there are safe even if you delete the container.
 - Everything else in the container is deleted with `docker rm`.
 
 ### Hands-on #1
@@ -35,7 +35,7 @@ Common commands. Run them on your laptop, not in the container:
     ```bash
     ls ~/ros2_ws/src
     ```
-    You should see `hero_mrs`, `hero_sim`, `crazyswarm2` and, if you bound one, your own package, among others.
+    You should see `hero_mrs`, `hero_sim`, `crazyswarm2` and your own package, among others.
 3. Start a ROS 2 node that publishes messages:
     ```bash
     ros2 run demo_nodes_py talker

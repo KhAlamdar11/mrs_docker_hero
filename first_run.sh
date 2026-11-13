@@ -5,8 +5,9 @@ set -e
 IMAGE_NAME="mrs_hero_image"
 CONTAINER_NAME="mrs_hero_container"
 
-# Optional: the folder of your own ROS 2 package on your laptop, e.g. "~/MY_PACKAGE_NAME".
-# In the container it is ~/ros2_ws/src/<folder name>. Leave it empty to not bind a package.
+# Students: the folder of your ROS 2 package on your laptop, e.g. "~/MY_PACKAGE_NAME"
+# (docs/installation.md, step 3.1). In the container it is ~/ros2_ws/src/<folder name>.
+# Left empty, no package is bound.
 MY_PACKAGE_PATH=""
 
 PACKAGE_VOLUME=()

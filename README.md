@@ -4,21 +4,19 @@ The Docker environment for the HERO project. Use it to run the **hero_sim** simu
 
 The container has ROS 2 Humble, crazyswarm2, motion capture tracking, cfclient and [hero_sim](https://github.com/larics/hero_sim).
 
-## Installation
+## Installation and setup
 
-Do these three steps at home, before the first session. They take about an hour, mostly downloading. They're in [docs/installation.md](docs/installation.md):
+For students: do these three steps at home, before the first session. They take about an hour, mostly downloading. They're in [docs/installation.md](docs/installation.md):
 
 1. [Install Docker](docs/installation.md#step-1-install-docker)
 2. [Build the image](docs/installation.md#step-2-build-the-image)
-3. [Create the container and run the example](docs/installation.md#step-3-create-the-container-and-run-the-example)
+3. [Bind your package, create the container and run the example](docs/installation.md#step-3-bind-your-package-create-the-container-and-run-the-example)
 
 New to Docker, tmux or the robots? After the installation, do the tutorials in this order:
 
 1. [Docker and tmux](docs/tutorial_docker_tmux.md)
 2. [Simulation](docs/tutorial_simulation.md)
 3. [Real robots](docs/tutorial_robots.md)
-
-To write your own code, bind your ROS 2 package into the container: see [Your own package](docs/own_package.md).
 
 ## Quick start
 
