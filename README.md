@@ -38,7 +38,7 @@ In tmux, `Shift` + left/right switches between windows and `Ctrl` + arrows betwe
 
 [hero_sim](https://github.com/larics/hero_sim) is a lightweight simulator. It draws the robots in RViz and moves them exactly as commanded, with no physics. You command the simulated robots through the same ROS 2 topics as the real ones.
 
-A **scenario** defines the robors, where they start, and which map they drive in among other details. In this course, the map format is same as the stage simulator you have used in previous labs..
+A **scenario** defines the robots, where they start, and which map they drive in among other details. In this course, the map format is same as the stage simulator you have used in previous labs...
 
 Keep your scenarios in your package, so they're saved on your laptop. An example of a scenario config file is provided [here](https://github.com/larics/hero_sim/blob/master/config/mrs_world_example.yaml).
 

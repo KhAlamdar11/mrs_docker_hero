@@ -28,12 +28,7 @@ ament_python_install_package(${PROJECT_NAME})
 
 # Install Python executables
 install(PROGRAMS
-  scripts/crazyflie_server_reconnect.py
   scripts/crazyflie_server_reconnect_new.py
-  scripts/aideck_streamer_tcp.py
-  scripts/aideck_streamer_udp.py
-  scripts/joy_emergency.py
-  scripts/AGV.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
@@ -41,7 +36,6 @@ install(PROGRAMS
 install(DIRECTORY
   config
   launch
-  worlds
   DESTINATION share/${PROJECT_NAME}/
 )
 
