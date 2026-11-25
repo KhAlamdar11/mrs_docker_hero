@@ -12,6 +12,8 @@ For students: do these three steps at home, before the first session. They take 
 2. [Build the image](docs/installation.md#step-2-build-the-image)
 3. [Bind your package, create the container and run the example](docs/installation.md#step-3-bind-your-package-create-the-container-and-run-the-example)
 
+Additionally, outside of docker container, on you laptop locally, you should install [NatNetSDK](https://github.com/whoenig/NatNetSDKCrossplatform). This package enables receiving data from an OptiTrack Motion Capture system, so it is required to work with real robots.
+
 ## Quick start
 
 Every time you work with the simulator:
