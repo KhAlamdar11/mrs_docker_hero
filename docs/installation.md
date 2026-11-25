@@ -49,7 +49,7 @@ If a step fails, look in [Troubleshooting](#troubleshooting).
 1. Download this repository:
    ```bash
    cd ~
-   git clone https://github.com/KhAlamdar11/mrs_docker_hero.git
+   git clone https://github.com/larics/mrs_docker_hero.git
    cd mrs_docker_hero
    ```
 2. Build the image. This takes 30 to 60 minutes:

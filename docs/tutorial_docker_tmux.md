@@ -95,4 +95,4 @@ Commands:
 5. Stop everything with `Ctrl+b, k`.
 
 ---
-Next: [Simulation](tutorial_simulation.md).
+Next: the [quick start](../README.md#quick-start).
