@@ -61,13 +61,33 @@ If a step fails, look in [Troubleshooting](#troubleshooting).
    docker images
    ```
 
-## Step 3: Bind your package, create the container and run the example
+## Step 3: Bind your ROS 2 package to the container
 
-1. Bind your ROS 2 package into the container: the package where you write your code for the course. Open `~/mrs_docker_hero/first_run.sh` and set `MY_PACKAGE_PATH` at the top to your package's folder on your laptop, with your package's name in place of `MY_PACKAGE_NAME`:
+1. Your ROS 2 package is the folder where you will write and store all the code you develop for this course. You need to bind (connect) this folder on your laptop to the Docker container so that you can edit your code on your laptop and build and run it inside the container.
+
+   To do this, open ~/mrs_docker_hero/first_run.sh and find the MY_PACKAGE_PATH variable near the top of the file. Set it to the path of your ROS 2 package folder on your laptop, replacing MY_PACKAGE_NAME with the actual name of your package:
+   
+      ```bash
+      MY_PACKAGE_PATH="~/MY_PACKAGE_NAME"
+      ```
+      
+   Make sure that the folder already exists on your laptop. 
+   
+   Once the container is started, this same folder will be accessible inside the container at:
+   
    ```bash
-   MY_PACKAGE_PATH="~/MY_PACKAGE_NAME"
+   ~/ros2_ws/src/MY_PACKAGE_NAME
    ```
-   The folder must exist. In the container, your package is `~/ros2_ws/src/MY_PACKAGE_NAME`. It's the same folder as on your laptop, not a copy: write your code on your laptop with any editor, then build and run it in the container. It stays safe even if you delete the container.
+   
+   **Important:** Your package is not copied into the container. Instead, Docker makes the folder on your laptop and the corresponding folder inside the container point to the same files. This means that:
+   
+   - You can write and edit your code directly on your laptop using your preferred code editor.
+   - Any changes you make on your laptop will immediately be visible inside the container.
+   - You can build and run your ROS 2 package from inside the container.
+   - Your code remains stored on your laptop, so it will not be lost if you stop or delete the container.
+   
+   In short, this allows you to edit your code on your laptop, but build and run it inside the container.
+
 2. If your laptop has no NVIDIA GPU (you skipped step 1.5), delete the `--gpus all \` line in `first_run.sh`.
 3. Allow the container to open windows on your screen. This line makes every new terminal do it:
    ```bash
