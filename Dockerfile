@@ -171,7 +171,6 @@ RUN apt-get update &&  apt-get upgrade -y && apt-get install -y \
                    ros-${ROS2_DISTRO}-nav2-map-server \
                    ros-${ROS2_DISTRO}-nav2-lifecycle-manager \
                    ros-${ROS2_DISTRO}-rosbridge-suite \
-                   ros-${ROS2_DISTRO}-rosbag2-storage-mcap \
                    ros-${ROS2_DISTRO}-octomap \
                    ros-${ROS2_DISTRO}-octomap-ros \
                    ros-${ROS2_DISTRO}-octomap-server \
@@ -191,8 +190,6 @@ RUN mkdir -p $HOME/ros2_ws/src \
     && git checkout fcf51e27fe675bbdb564a40f4ca1ee4336c062ea \
     && git submodule sync --recursive && git submodule update --init --recursive\
     && cd $HOME/ros2_ws/src \
-    && git clone https://github.com/JMU-ROBOTICS-VIVA/ros2_aruco.git \
-    && git clone https://github.com/larics/icuas25_msgs.git \
     && git clone https://github.com/IMRCLab/motion_capture_tracking.git \
     && cd $HOME/ros2_ws/src/motion_capture_tracking \
     && git checkout 73da55a005c3c8ccd26e108ba627dbcd438f30f9 \
